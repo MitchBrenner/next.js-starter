@@ -2,7 +2,7 @@
 
 Uses ESLint as well as prettier for formatting and some prettier pluggins to improve the formatting styling of imports and tailwind css classes.
 
-Check out `settings.json` in the `.vscode` directory to view custom save on commands and how to set css files to default to tailwind css
+Check out `settings.json` in the `.vscode` directory to view custom save on commands and how to set css files to default to tailwind css.
 
 ## Formatting and Linting
 
@@ -46,3 +46,4 @@ npm install -D prettier prettier-plugin-tailwindcss
 ### SVG Generators and Design Resources
 
 [fffuel](https://www.fffuel.co/)
+
