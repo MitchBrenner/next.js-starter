@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Starting Template
 
-## Getting Started
+Uses ESLint as well as prettier for formatting and some prettier pluggins to improve the formatting styling of imports and tailwind css classes.
 
-First, run the development server:
+Check out `settings.json` in the `.vscode` directory to view custom save on commands and how to set css files to default to tailwind css
+
+## Formatting and Linting
+
+### Prettier pluggin sort imports
+
+[docs](https://github.com/trivago/prettier-plugin-sort-imports)
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install --save-dev @trivago/prettier-plugin-sort-imports
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- then update `.prettierrc.json` and add pluggin
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prettier pluggin sort tailwind css classes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[blog](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
 
-## Learn More
+```bash
+npm install -D prettier prettier-plugin-tailwindcss
+```
 
-To learn more about Next.js, take a look at the following resources:
+- then add pluggin to `.prettierrc.json`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Use this to make sure you're using the correct version of ts with next.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[docs](https://nextjs.org/docs/app/building-your-application/configuring/typescript)
 
-## Deploy on Vercel
+## Component UIs / Styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Shadcn
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[docs](https://ui.shadcn.com/)
+
+- comes with lucide-react icons
+- [icons](https://lucide.dev/icons/)
+
+### Using an Emoji as a favicon
+
+[blog](https://css-tricks.com/emoji-as-a-favicon/)
+
+### SVG Generators and Design Resources
+
+[fffuel](https://www.fffuel.co/)
